@@ -6,33 +6,37 @@
   gap: 20px;
 }
 
-.header, .footer {
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
 }
 
-.main-description, .specials, .testimonials, .about {
+.main-description,
+.specials,
+.testimonials,
+.about {
   padding: 20px;
 }
 
 /* Header Component */
 .logo {
-  height: 60px;
+  height: 90px;
 }
 
 /* Nav Component */
 .navbar {
   display: flex;
-  flex-direction: row; /* Ensure this is row to display items horizontally */
+  flex-direction: row;
   padding: 0;
   margin: 0;
 }
 
 .navbar ul {
   list-style: none;
-  display: flex; /* This makes sure that the list items are in a row */
+  display: flex;
   padding: 0;
   margin: 0;
 }
@@ -43,13 +47,31 @@
 
 .navbar a {
   text-decoration: none;
-  color: #333; /* Change as needed */
+  color: #333;
+  font-weight: 600;
 }
-
 
 /* MainDescription Component */
 .main-description {
-  background-color: #f5f5f5; /* Adjust as needed */
+  height: 20em;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../public/bg4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  color: #ffffff;
+  font-size: x-large;
 }
 
 /* Specials Component */
@@ -88,7 +110,8 @@
   padding: 0 10px;
 }
 
-.contact-info, .social-media-links {
+.contact-info,
+.social-media-links {
   display: flex;
   flex-direction: column;
 }
