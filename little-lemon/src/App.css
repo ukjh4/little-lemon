@@ -1,38 +1,98 @@
+/* App.css - Global Styles */
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-description, .specials, .testimonials, .about {
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Component */
+.logo {
+  height: 60px; /* Adjust as needed */
+}
+
+/* Nav Component */
+.navbar {
+  display: flex;
+  flex-direction: row; /* Ensure this is row to display items horizontally */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex; /* This makes sure that the list items are in a row */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  padding: 0 20px; /* This gives space between the navigation items */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Change as needed */
+}
+
+
+/* MainDescription Component */
+.main-description {
+  background-color: #f5f5f5; /* Adjust as needed */
+}
+
+/* Specials Component */
+.specials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Testimonials Component */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* About Component */
+.about {
+  background-color: #eaeaea; /* Adjust as needed */
+}
+
+/* Footer Component */
+.footer {
+  background-color: #333; /* Adjust as needed */
+  color: #fff;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-nav a {
+  color: #fff; /* Adjust as needed */
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.contact-info, .social-media-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-media-links a {
+  padding: 5px 0;
 }
