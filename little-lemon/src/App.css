@@ -23,7 +23,7 @@
 
 /* Header Component */
 .logo {
-  height: 90px;
+  height: 72px;
 }
 
 /* Nav Component */
@@ -76,9 +76,58 @@
 
 /* Specials Component */
 .specials {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.special-title {
+  text-align: center;
+  font-size: 2rem; /* Adjust font size as needed */
+  width: 100%;
+  margin-bottom: 2rem; /* Space between title and specials */
+}
+
+.specials-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5rem;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.special-item {
+  background: #fff; /* Change as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow to each item */
+  border-radius: 4px; /* Optional: rounds the corners */
+  overflow: hidden; /* Ensures the content is contained within the borders */
+}
+
+.special-item img {
+  width: 100%;
+  display: block; /* Removes bottom space under the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.special-item h3,
+.special-item p,
+.special-item .price {
+  padding: 0.5rem; /* Adjust padding as needed */
+  margin: 0;
+}
+
+.special-item .price {
+  font-weight: bold;
+  color: #333; /* Change as needed */
+  text-align: right; /* Aligns price to the right */
+  padding-right: 1rem; /* Adjust padding as needed */
+}
+
+.special-item h3 {
+  border-bottom: 1px solid #eee; /* Optional: adds a separator */
+  padding-bottom: 0.5rem; /* Adjust padding as needed */
 }
 
 /* Testimonials Component */
