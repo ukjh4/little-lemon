@@ -34,8 +34,8 @@ function Specials() {
           <p>
             Delight in our Vegan Buddha Bowl, a wholesome ensemble of quinoa,
             kale, spiced chickpeas, roasted sweet potatoes, and creamy avocado
-            slices. Drizzled with a zesty lemon-tahini dressing, it’s a
-            guilt-free option that’s rich in nutrients and flavors.
+            slices. Drizzled with a zesty lemon-tahini dressing, it's a
+            guilt-free option that's rich in nutrients and flavors.
           </p>
           <div className="price">$17.99</div>
         </div>

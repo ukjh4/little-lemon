@@ -99,9 +99,9 @@
   margin: auto;
 }
 .special-item {
-  background: #fff; /* Change as needed */
+  background: #f0f0f0; /* Change as needed */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow to each item */
-  border-radius: 4px; /* Optional: rounds the corners */
+  border-radius: 12px; /* Optional: rounds the corners */
   overflow: hidden; /* Ensures the content is contained within the borders */
 }
 
