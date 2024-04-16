@@ -1,9 +1,34 @@
-/* App.css - Global Styles */
+/* Define CSS Variables */
+:root {
+  --primary-color: #333;
+  --background-light: #f0f0f0;
+  --accent-color: #ffa500;
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 40px;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
 .App {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 20px;
+  gap: var(--spacing-large);
 }
 
 .header,
@@ -11,14 +36,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 var(--spacing-medium);
 }
 
 .main-description,
 .specials,
 .testimonials,
 .about {
-  padding: 20px;
+  padding: var(--spacing-medium);
 }
 
 /* Header Component */
@@ -30,26 +55,27 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
+  align-items: center;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0;
 }
 
 .navbar li {
-  padding: 0 20px; /* This gives space between the navigation items */
+  padding: 0 var(--spacing-medium);
 }
 
 .navbar a {
-  text-decoration: none;
-  color: #333;
+  color: var(--primary-color);
   font-weight: 600;
 }
+
+.navbar a:hover {
+  color: var(--accent-color);
+}
+
 
 /* MainDescription Component */
 .main-description {
