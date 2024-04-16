@@ -224,24 +224,80 @@ blockquote {
   margin: 0 auto; /* Centers the image horizontally */
 }
 
-/* Footer Component */
-.footer-nav ul {
+/* Footer Styling */
+.footer {
+  background-color: #333; /* Dark background for the footer */
+  color: #fff; /* Light text color for readability */
+  padding: 20px 40px; /* Ample padding around the content */
   display: flex;
-  list-style-type: none;
+  flex-wrap: wrap; /* Allows footer contents to wrap on small screens */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-height: 100px; /* Adjust the height as needed */
+  width: auto; /* Maintains the aspect ratio */
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap; /* Ensures navigation items wrap on smaller screens */
+}
+
+.footer-nav ul {
+  list-style-type: none; /* Removes list styling */
+  padding: 0;
+  display: flex;
+  flex-direction: row; /* Aligns the nav items horizontally */
+  margin: 0 20px; /* Margin for spacing between nav items */
+}
+
+.footer-nav li {
+  margin: 0 10px; /* Margin between individual nav links */
 }
 
 .footer-nav a {
-  color: #fff; /* Adjust as needed */
-  text-decoration: none;
-  padding: 0 10px;
+  color: #fff; /* White color for the text */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: 600; /* Bold font weight for readability */
+  padding: 5px 10px; /* Padding for better touch targets */
 }
 
-.contact-info,
+.contact-info {
+  font-size: 0.9rem; /* Smaller font size for contact information */
+  text-align: right; /* Aligns the text to the right */
+  margin-top: 10px; /* Adds a margin on top for visual separation */
+}
+
 .social-media-links {
   display: flex;
-  flex-direction: column;
+  justify-content: center; /* Centers social media links */
+  padding-top: 10px; /* Padding on top */
 }
 
 .social-media-links a {
-  padding: 5px 0;
+  color: #fff;
+  margin: 0 5px; /* Small horizontal margin between links */
+  text-decoration: none; /* No underline */
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stacks the footer content vertically */
+    align-items: center; /* Aligns items centrally */
+  }
+
+  .footer-nav ul {
+    justify-content: center; /* Centers navigation items */
+  }
+
+  .contact-info {
+    text-align: center; /* Centers the contact info on small screens */
+  }
+
+  .social-media-links {
+    justify-content: center; /* Ensures links are centered */
+  }
 }
