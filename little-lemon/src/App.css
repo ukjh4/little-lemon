@@ -133,20 +133,41 @@
 /* Testimonials Component */
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: #f0f0f0; /* Updated to a solid gray background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  align-items: start; /* Ensure the title is at the top */
 }
 
-/* About Component */
-.about {
-  background-color: #eaeaea; /* Adjust as needed */
+.testimonials h2 {
+  grid-column: 1 / -1; /* Stretch the title across all columns */
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-/* Footer Component */
-.footer {
-  background-color: #333; /* Adjust as needed */
-  color: #fff;
+blockquote {
+  font-style: italic;
+  background: white;
+  border-left: 5px solid #ffa500;
+  padding: 20px;
+  margin: 0 15px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
+
+@media (max-width: 600px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 .footer-nav ul {
   display: flex;
