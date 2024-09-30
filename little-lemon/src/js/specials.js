@@ -2,7 +2,7 @@ import React from "react";
 
 function Specials() {
   return (
-    <div className="specials-background">
+    <div id="specials" className="specials-background">
       <section className="specials">
         <div className="special-title">This Week's Specials</div>
         <div className="specials-container">

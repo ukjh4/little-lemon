@@ -3,7 +3,7 @@
   --primary-color: #333;
   --background-light: #f0f0f0;
   --accent-color: #ffa500;
-  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --spacing-small: 10px;
   --spacing-medium: 20px;
   --spacing-large: 40px;
@@ -76,7 +76,6 @@ a {
   color: var(--accent-color);
 }
 
-
 /* MainDescription Component */
 .main-description {
   height: 20em;
@@ -98,6 +97,21 @@ a {
 #main {
   color: #ffffff;
   font-size: x-large;
+}
+
+.booking-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-button:hover {
+  background-color: darkorange;
 }
 
 /* Specials Component */
@@ -326,4 +340,51 @@ blockquote {
   .social-media-links {
     justify-content: center; /* Ensures links are centered */
   }
+}
+
+/* Booking page */
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: darkorange;
+}
+
+.booking-intro,
+.booking-info {
+  text-align: center;
+  margin-bottom: 20px;
 }
